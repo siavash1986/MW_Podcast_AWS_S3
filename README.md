@@ -21,12 +21,14 @@ Also this application leverage Amazon Simple Email Service (AWS SES) to report t
 <code>POST /podcast</code><br/>
 Downloads the podcast for current date of server and upload it to AWS S3. Report to the administrator if the proper policy was chosen in <code>Config.java</code> singleton<br/>
 returns <code>true</code> if the operation was successful and <code>false</code> if failed
+
 ---
  
 <code>POST /podcast/{date}</code><br/>
 <code>date</code> must be in <code>YYYY-MM-DD</code> format.<br/>
 Downloads the podcast for specified date upload it to AWS S3. Report to the administrator if the proper policy was chosen in <code>Config.java</code> singleton<br/>
 returns <code>true</code> if the operation was successful and <code>false</code> if failed<br/>
+
 ---
 
 <code>POST /podcast/{date}/{date}</code><br/>
