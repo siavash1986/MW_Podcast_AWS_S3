@@ -9,7 +9,6 @@ pipeline{
                 sh 'echo Running build stage!'
                 sh 'pwd'
                 sh 'ls'
-                sh './gradlew clean'
                 sh './gradlew build'
             }
         }
