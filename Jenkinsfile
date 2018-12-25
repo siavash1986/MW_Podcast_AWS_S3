@@ -11,6 +11,8 @@ pipeline{
                 sh 'ls'
                 sh 'whoami'
                 sh 'gradle --version'
+                sh 'gradle clean'
+                sh 'gradle build'
             }
         }
 
