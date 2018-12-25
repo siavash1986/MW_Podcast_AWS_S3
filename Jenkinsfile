@@ -9,7 +9,7 @@ pipeline{
                 sh 'echo Running build stage!'
                 sh 'pwd'
                 sh 'ls'
-                sh './gradlew build'
+                sh 'gradle --version'
             }
         }
 
