@@ -10,6 +10,7 @@ pipeline{
                 sh 'pwd'
                 sh 'ls'
                 sh 'whoami'
+                sh 'gradle --version'
             }
         }
 
