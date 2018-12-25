@@ -14,10 +14,10 @@ import java.util.logging.Logger;
 @Component
 public class AmazonSES {
 
-  @Value("${emailFrom}")
+  @Value("${email.from}")
   private String FROM;
 
-  @Value("${emailTo}")
+  @Value("${email.to}")
   private String TO;
 
   public boolean sendEmail(String subject, String mail) {
