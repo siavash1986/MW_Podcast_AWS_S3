@@ -2,6 +2,10 @@
 pipeline{
     agent any
 
+    tools {
+        gradle "gradle5.0"
+    }
+
     stages{
 
         stage('build'){
@@ -11,7 +15,7 @@ pipeline{
                 sh 'ls'
                 sh 'whoami'
                 sh 'gradle --version'
-                sh 'gradle clean --stacktrace'
+                sh 'gradle clean'
                 sh 'gradle build'
             }
         }
