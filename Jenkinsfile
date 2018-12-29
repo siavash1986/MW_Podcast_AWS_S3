@@ -1,8 +1,6 @@
 #!/usr/bin/env groovy
 pipeline{
-    agent {
-        docker "gradle:5.0.0-jdk8"
-    }
+    agent any
 
     tools {
         gradle "gradle5.0"
