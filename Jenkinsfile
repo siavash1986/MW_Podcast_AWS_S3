@@ -15,7 +15,6 @@ pipeline{
                 sh 'echo Running build stage!'
                 sh 'pwd'
                 sh 'ls'
-                sh 'whoami'
                 sh 'java -version'
                 sh 'gradle --version'
                 sh 'gradle clean'
